@@ -1,0 +1,35 @@
+{
+  "name": "hiremate-ai-server",
+  "version": "1.0.0",
+  "description": "HireMate AI Backend - Resume Intelligence Engine",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "db:init": "node src/config/initDb.js"
+  },
+  "keywords": [
+    "resume",
+    "ai",
+    "ats"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.0",
+    "node-cron": "^4.2.1",
+    "openai": "^6.25.0",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
